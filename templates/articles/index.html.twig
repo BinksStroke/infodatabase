@@ -6,17 +6,9 @@
 
 <div class="w-75 mx-auto">
 
-<h1>{{ article.title }} </h1>
-<p class="description w-75">{{ article.description }} </p>
-{% autoescape %}
-    {{ article.title|raw }} {# var won't be escaped #}
-{% endautoescape %}
-{% autoescape %}
-    {{ article.excerpt|raw }} {# var won't be escaped #}
-{% endautoescape %}
-{% autoescape %}
-    {{ article.description|raw }} {# var won't be escaped #}
-{% endautoescape %}
+<h1>{{ article.title |raw }} </h1>
+<p class="description w-75">{{ article.description |raw  }} </p>
+
 
 
 </div>
